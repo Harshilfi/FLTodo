@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --primary:rgb(210, 210, 210);
+    --secondary:rgb(0, 31, 117);
+    --black:rgb(16, 16, 16);
+    --gray:rgba(0, 0, 0, 0.345);
+    --white:rgb(235, 235, 235);
+    --accent:rgb(9, 156, 9);
+    --big:clamp(2rem,4vw,7rem);
+    --radius:8px;
+    --base:clamp(1rem,1.2vw,3rem);
+    --small:clamp(0.8rem,1vw,1rem);
+}
+.todoer{
+    background-color: var(--primary);
+    width: 80vw;
+    margin: 10% auto;
+    padding: 2vw;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vh;
+    
+    .icon{
+        cursor: pointer;
+    }
+
+    h1{
+        font-size: var(--big);
+        color: var(--secondary);
+
+    }
+    .inputs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 80%;
+        input, select{
+            padding: 5px 20px;
+            border-radius: var(--radius);
+            font-size: var(--base);
+            cursor: pointer;
+        }
+        input{
+            width: 60%;
+            border: 2px solid var(--secondary);
+        }
+        select{
+            border: none;
+            background-color: var(--secondary);
+            color: var(--white);
+        }
+        button{
+            border:none;
+            background-color: transparent;
+        }
+        .icon.add{
+            width: 40px;
+            height: auto;
+            color: var(--secondary);
+        }
+    }
+    .filter-panel{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        button{
+            border: none;
+            border-radius: var(--radius);
+            padding: 3px 9px;
+            background-color:var(--gray) ;
+            color: var(--white);
+            font-size: var(--small);
+            cursor: pointer;
+        }
+        p{
+            color: var(--gray);
+            font-weight: 600;
+            font-size: var(--small);
+        }
+    }
+    .tasks-list{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 80%;
+        li{
+            background-color: var(--gray);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-radius: var(--radius);
+
+            .task-title{
+                font-size: var(--base);
+                color: var(--black);
+            }
+            .icon{
+                width: 30px;
+                height: auto;
+            }
+            .del-bt{
+                background-color: transparent;
+                border: none;
+                color: rgb(155, 6, 6);
+            }
+            div{
+                display: flex;
+                
+            }
+
+        }
+    }
+}
+
