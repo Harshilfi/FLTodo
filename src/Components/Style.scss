@@ -8,9 +8,9 @@
     --primary:rgb(210, 210, 210);
     --secondary:rgb(0, 31, 117);
     --black:rgb(16, 16, 16);
-    --gray:rgba(0, 0, 0, 0.345);
+    --gray:rgba(0, 0, 0, 0.247);
     --white:rgb(235, 235, 235);
-    --accent:rgb(9, 156, 9);
+    --accent:rgb(95, 209, 95);
     --big:clamp(2rem,4vw,7rem);
     --radius:8px;
     --base:clamp(1rem,1.2vw,3rem);
@@ -109,6 +109,9 @@
                 width: 30px;
                 height: auto;
             }
+            .checked{
+                color: var(--secondary);
+            }
             .del-bt{
                 background-color: transparent;
                 border: none;
@@ -116,7 +119,7 @@
             }
             div{
                 display: flex;
-                
+
             }
 
         }
